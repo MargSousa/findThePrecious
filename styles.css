@@ -59,26 +59,36 @@
 
 /* Banner */
 
+
+/* .carousel, .carousel-inner, .carousel-item {
+  height: 450px;
+} */
+
+.banner {
+  display: flex;
+}
+
+.banner-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+.banner-font {
+  font-family: PartyBusiness;
+  color: white;
+}
+
 .banner-title {
-  font-weight: bold;
-  text-align: start;
-  line-height: 25px;
-  font-size: 18px;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 60px;
 }
 
 .banner-text {
-  text-align: start;
-  line-height: 25px;
-  font-size: 16px;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 40px;
 }
+
+/* Fellows */
 
 .fellows-title {
   text-align: center;
@@ -153,22 +163,14 @@
     text-align: center;
     font-size: 14px;
   }
-
-  .banner-title, .banner-text {
-    line-height: 15px;
-    text-align: start;
-  }
-
+}
+@media (max-width: 575px) {
   .banner-title {
-    top: 35%;
-    left: 50%;
-    font-size: 14px;
+    font-size: 28px;
   }
-  
+
   .banner-text {
-    top: 70%;
-    left: 50%;
-    font-size: 12px;
+    font-size: 20px;
   }
   
 }
@@ -177,5 +179,5 @@
   .nav-item-two {
     border: solid 1px #fe661d;
   }
-  
+
 }
