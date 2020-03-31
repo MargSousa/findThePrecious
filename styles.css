@@ -31,6 +31,10 @@
 
 /* NavBar*/
 
+.logo {
+  width: 90%;
+}
+
 .navbar a {
   color: white !important;
 }
