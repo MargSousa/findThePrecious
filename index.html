@@ -76,10 +76,10 @@
   <div class="fellows-section">
 
     <div class="fellows-title">
-      <span class="fellows-symbols orange">ij</span>
+      <span class="symbols orange">ij</span>
       Fellows wanted dead 
       <span class="small-title">(or alive if you want to eat them later)</span>
-      <span class="fellows-symbols orange">ij</span>
+      <span class="symbols orange">ij</span>
     </div>
 
     <div class="container">
@@ -117,46 +117,54 @@
       </div>
     </div>
   </div>
-  
-  
-
-  <div class="line"></div>
 
   <!-- Forms -->
 
-  <div class="contacts-title">Contact Us</div>
+  <div class="contacts-section">
+    <div class="line"></div>
 
+    <div class="contacts-title">
+      <span class="symbols orange">ij</span>
+      Contact Us
+      <span class="symbols orange">ij</span>
+    </div>
 
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-12">
-        <form>
-          <div class="form-group">
-            <label for="exampleFormControlInput1"></label>
-            <input type="email" class="form-control form-control-sm" id="exampleFormControlInput1" placeholder="@">
+    <div class="container-fluid contacts">
+      <div class="row justify-content-center new-section">
+          <div class="col-md-6 form-section">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1"></label>
+                <input type="email" class="form-control form-control" id="exampleFormControlInput1" placeholder="@">
+              </div>
+              <div class="form-group">
+                <input class="form-control form-control" type="text" placeholder="Address">
+              </div>
+              <div class="form-group">
+                <select class="form-control form-control" id="exampleFormControlSelect1">
+                  <option>I have seen one of them</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6">Your message to the master</textarea>
+              </div>
+              <button type="submit" class="btn btn-dark float-right">Send !</button>
+            </form>
           </div>
-          <div class="form-group">
-            <input class="form-control form-control-sm" type="text" placeholder="Address">
-          </div>
-          <div class="form-group">
-            <select class="form-control form-control-sm" id="exampleFormControlSelect1">
-              <option>I have seen one of them</option>
-              <option>2</option>
-              <option>3</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Your message to the master</textarea>
-          </div>
-          <button type="submit" class="btn btn-dark float-right">Send !</button>
-        </form>
-      </div>
+          <div class="col-md-6">
+            <img class="contacts-image" src="images/map.png" alt="Map">
+          </div> 
+      </div>    
     </div>
   </div>
 
+  
+
   <!-- Footer -->
 
-  <footer class="container-fluid bg-dark">
+  <footer class="container-fluid orange-back">
     <div class="row foot-section">
       <div class="col-md-4">
         <div class="foot-text">About us</div>
@@ -169,8 +177,9 @@
         <div class="foot-text">Legal mentions</div>
       </div>
       <div class="col-md-4">
-        <div class="foot-site">Sauron4Ever.com</div>
-        <div class="foot-site">Follow him also on</div>
+        <div class="foot-site site">Sauron4Ever.com</div>
+        <div class="foot-site site">Follow him also on Twitter</div>
+        <div class="foot-site"><img class="foot-logo" src="images/logo.png"></div>
       </div>
     </div>
   </footer>
