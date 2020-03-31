@@ -1,0 +1,177 @@
+@font-face {
+  font-family: Aniron;
+  src: url(./fonts/aniron-font/Aniron-7BaP.ttf);
+}
+
+@font-face {
+  font-family: Aniron;
+  src: url(./fonts/aniron-font/AnironcBold-PKwr.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: PartyBusiness;
+  src: url(./fonts/PartyBusiness-4B0K.ttf);
+}
+
+* {
+  font-family: Aniron;
+}
+
+/* COLORS */
+
+.orange {
+  background-color: #fe661d;
+}
+
+.black {
+  color: #1a1a1a;
+}
+
+
+/* NavBar*/
+
+.navbar a {
+  color: white !important;
+}
+
+.navbar-nav {
+  margin-left: 40px;
+  font-size: 16px;
+}
+
+.nav-item {
+  padding: 0px 10px 0px 10px;
+  line-height: 12px;
+}
+
+.nav-item-two {
+  border-left: solid 1px white;
+}
+
+.nav-item:hover a {
+  color: black !important;
+}
+
+/* Banner */
+
+.banner-title {
+  font-weight: bold;
+  text-align: start;
+  line-height: 25px;
+  font-size: 18px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-text {
+  text-align: start;
+  line-height: 25px;
+  font-size: 16px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fellows-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 40px 40px 20px 40px;
+  color: rgb(91, 91, 91);
+}
+
+.small-title {
+  font-size: 14px;
+}
+
+.card-styles {
+  width: 250px;
+  margin: 20px auto;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.card-img-overlay {
+  left: 15px;
+}
+
+#wrapperOne .reward-text, #wrapperTwo .reward-text {
+  visibility: hidden;
+}
+
+#wrapperOne:hover .reward-text, #wrapperTwo:hover .reward-text  {
+  visibility: visible;
+}
+
+.line {
+  margin-top: 30px;
+  border: solid 0.5px rgb(91, 91, 91);
+  width: 95%;
+  margin: auto;
+}
+
+.contacts-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(91, 91, 91);
+  margin: 30px 0px 0px 40px;
+}
+
+.foot-section {
+  font-size: 12px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.foot-text {
+  color: rgb(179, 179, 179);
+  padding: 5px;
+}
+
+.foot-site {
+  color: white;
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+
+  .contacts-title {
+    margin-left: 15px;
+  }
+
+  .foot-section { 
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .banner-title, .banner-text {
+    line-height: 15px;
+    text-align: start;
+  }
+
+  .banner-title {
+    top: 35%;
+    left: 50%;
+    font-size: 14px;
+  }
+  
+  .banner-text {
+    top: 70%;
+    left: 50%;
+    font-size: 12px;
+  }
+  
+}
+
+@media (max-width: 575px) {
+  .nav-item-two {
+    border: solid 1px #fe661d;
+  }
+  
+}
