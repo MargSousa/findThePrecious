@@ -14,6 +14,11 @@
   src: url(./fonts/PartyBusiness-4B0K.ttf);
 }
 
+@font-face {
+  font-family: "Tengwar Annatar";
+  src: url(./fonts/tengwar_annatar/tngani.ttf);
+}
+
 * {
   font-family: Aniron;
 }
@@ -21,6 +26,10 @@
 /* COLORS */
 
 .orange {
+  color: #fe661d;
+}
+
+.orange-back {
   background-color: #fe661d;
 }
 
@@ -90,38 +99,96 @@
 
 /* Fellows */
 
+.fellows-section {
+  background-image: url("./images/bg_light.png"); 
+  padding: 40px 10px 10px 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fellows-symbols {
+  font-family: "Tengwar Annatar";
+}
+
 .fellows-title {
-  text-align: center;
   font-weight: bold;
-  font-size: 20px;
-  margin: 40px 40px 20px 40px;
-  color: rgb(91, 91, 91);
+  font-size: 24px;
+  margin: 0px 0px 10px 30px;
+  color: black;
 }
 
 .small-title {
-  font-size: 14px;
+  font-size: 18px;
 }
 
-.card-styles {
-  width: 250px;
-  margin: 20px auto;
+.card {
+  width: 350px;
+  margin: 10px auto;
+  border: solid 5px black;
+}
+
+.card-reward {
+  text-align: center;
+  font-size: 30px;
+  font-family: PartyBusiness;
+  line-height: 26px;
+  padding: 10px 20px 10px 20px;
+  opacity: 0.9;
+  margin: 10px 45px 10px 50px;
+}
+
+.card-image-hover {
+  position: absolute;
+  width: 100%;
+  height: 78%;
+  background-color: hsla(0, 0%, 0%, 0.3);
+}
+
+.card-title {
+  padding-top: 80px;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-family: PartyBusiness;
 }
 
 .card-text {
-  font-size: 14px;
+  font-size: 32px;
+  padding: 10px 15px 10px 15px;
+  background-color: black;
+  color: rgb(196, 196, 196);
+  font-family: PartyBusiness;
 }
 
-.card-img-overlay {
-  left: 15px;
+.card-image {
+  height: 360px;
+  overflow: hidden;
 }
 
-#wrapperOne .reward-text, #wrapperTwo .reward-text {
-  visibility: hidden;
+.card-dead {
+  font-size: 40px;
+  font-family: PartyBusiness;
+  padding-top: 20px;
+  text-align: center;
 }
 
-#wrapperOne:hover .reward-text, #wrapperTwo:hover .reward-text  {
-  visibility: visible;
+.card-title-dead {
+  padding-top: 80px;
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  font-family: PartyBusiness;
+  text-decoration: line-through;
+  text-decoration-color: #fe661d;
 }
+
+.card-image-dead-hover {
+  position: absolute;
+  width: 100%;
+  height: 78%;
+  background-color: hsla(0, 0%, 0%, 0.7);
+}
+
 
 .line {
   margin-top: 30px;
@@ -129,6 +196,8 @@
   width: 95%;
   margin: auto;
 }
+
+/* Contact */
 
 .contacts-title {
   font-weight: bold;
@@ -155,6 +224,14 @@
 
 @media (max-width: 768px) {
 
+  .fellows-title {
+    font-size: 18px;
+  }
+
+  .small-title {
+    font-size: 12px;
+  }
+
   .contacts-title {
     margin-left: 15px;
   }
@@ -163,21 +240,20 @@
     text-align: center;
     font-size: 14px;
   }
+
 }
+
 @media (max-width: 575px) {
+  .nav-item-two {
+    border: solid 1px #fe661d;
+  }
+
   .banner-title {
     font-size: 28px;
   }
 
   .banner-text {
     font-size: 20px;
-  }
-  
-}
-
-@media (max-width: 575px) {
-  .nav-item-two {
-    border: solid 1px #fe661d;
   }
 
 }

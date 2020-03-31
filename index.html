@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <title>Quest 10 - Bootstrap</title>
+  <title>Quest 11 - Bootstrap</title>
 </head>
 <body>
 
   <!-- NavBar -->
 
-  <nav class="navbar navbar-expand-sm navbar-dark orange">
+  <nav class="navbar navbar-expand-sm navbar-dark orange-back">
     <a href="#" class="navbar-brand"><img class="logo" src="images/logo.png"></a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
       <span class="navbar-toggler-icon"></span>
@@ -41,20 +41,24 @@
             </div>
           </div>
         </div>
-        <!-- <div class="carousel-item">
-          <img src="./images/dark_vador.jpg" class="d-block w-100 carousel-image" alt="Image Two">
+        <div class="carousel-item">
+          <img src="./images/dark_vador.jpg" class="d-block w-100" alt="Image One">
           <div class="card-img-overlay banner">
-            <p class="banner-title banner-font">Sauron is a very good bro</p>
-            <p class="banner-text banner-font">Please help him find his ring !</p>
+            <div class="banner-section">
+              <p class="banner-title banner-font">Image 2</p>
+              <p class="banner-text banner-font">Please help him find his ring !</p>
+            </div>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./images/dark_vador.jpg" class="d-block w-100" alt="Image Three">
+          <img src="./images/dark_vador.jpg" class="d-block w-100" alt="Image One">
           <div class="card-img-overlay banner">
-            <p class="banner-title banner-font">Dangerous fellowship try to destroy the ring</p>
-            <p class="banner-text banner-font">Orcs, Goblins, protect your master Sauron !</p>
+            <div class="banner-section">
+              <p class="banner-title banner-font">Image 3</p>
+              <p class="banner-text banner-font">Please help him find his ring !</p>
+            </div>
           </div>
-        </div> -->
+        </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -68,47 +72,53 @@
 
 
   <!-- Cards  -->
-  
-  <div class="fellows-title">Fellows wanted dead <span class="small-title">(or alive if you want to eat them later)</span></div>
 
+  <div class="fellows-section">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="card card-styles" id="wrapperOne">
-          <img src="https://via.placeholder.com/100" class="card-img-top" alt="The Wizard">
-          <div class="card-img-overlay">
-            <p class="card-text btn btn-light reward-text">Reward <span class="orange">1000</span> gold coins</p>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">The Wizard</h5>
-            <p class="card-text">A very dangerous </p>
+    <div class="fellows-title">
+      <span class="fellows-symbols orange">ij</span>
+      Fellows wanted dead 
+      <span class="small-title">(or alive if you want to eat them later)</span>
+      <span class="fellows-symbols orange">ij</span>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card" id="wrapperOne">
+            <img src="./images/gandalf.png" class="card-img-top card-image" alt="Gandalf">
+            <div class="card-image-hover">
+              <div class="card-reward btn btn-light">Reward<br><span class="orange">1000</span> gold coins</div>
+              <div class="card-title">Gandalf</div>
+            </div>
+            <div class="card-text">A very dangerous tuiz ard, balrog killer...</div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card card-styles">
-          <img src="https://via.placeholder.com/100" class="card-img-top" alt="Hobbit #3">
-          <div class="card-body">
-            <h5 class="card-title">Hobbit #3</h5>
-            <p class="card-text">Small description...</p>
+        <div class="col-lg-4">
+          <div class="card" id="wrapperOne">
+            <img src="./images/aragorn.png" class="card-img-top card-image" alt="Aragorn">
+            <div class="card-image-hover">
+              <div class="card-reward btn btn-light">Reward<br><span class="orange">800</span> gold coins</div>
+              <div class="card-title">Aragorn</div>
+            </div>
+            <div class="card-text">Sauron's finger says him his aword is dangerous...</div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="card card-styles" id="wrapperTwo">
-          <img src="https://via.placeholder.com/100" class="card-img-top" alt="Yummy Dwarf">
-          <div class="card-img-overlay">
-            <p class="card-text btn btn-light reward-text">Reward 250 gold coins</p>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Yummy Dwarf</h5>
-            <p class="card-text">Small description...</p>
+        <div class="col-lg-4">
+          <div class="card" id="wrapperOne">
+            <img src="./images/gimli.png" class="card-img-top card-image" alt="Gimli">
+            <div class="card-image-dead-hover">
+              <div class="card-dead orange">Dead</div>
+              <div class="card-title-dead">Gimli</div>
+            </div>
+            <div class="card-text">A dwarf, with a beard and an axe...</div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  
+  
 
   <div class="line"></div>
 
